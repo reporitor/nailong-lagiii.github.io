@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Epi Betdey Nailoong 🎂</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to bottom, #fffafc, #dff0ff);
+      overflow-x: hidden;
+    }
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff0fb;
+      border: 3px dashed #ffb6c1;
+      padding: 30px;
+      font-size: 2em;
+      color: #ff69b4;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      z-index: 10;
+      display: none;
+      animation: popIn 1s ease-in-out forwards;
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .main-character {
+      width: 200px;
+      margin: 30px auto 10px;
+      display: block;
+    }
+
+    .wall-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .wall-gallery img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 3px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .cake {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .cake img {
+      width: 180px;
+    }
+
+    .message {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.5em;
+      color: #ff7eb3;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup" id="popup">Epi Betdey Nailooong~ 🐤🎉</div>
+
+  <img src="main-nailoong.png" alt="Nailoong Main" class="main-character" />
+
+  <div class="wall-gallery">
+    <img src="nailoong1.png" alt="Nailoong 1" />
+    <img src="nailoong2.png" alt="Nailoong 2" />
+    <img src="nailoong3.png" alt="Nailoong 3" />
+    <img src="nailoong4.png" alt="Nailoong 4" />
+    <img src="nailoong5.png" alt="Nailoong 5" />
+    <!-- tambahin lagi kalau ada -->
+  </div>
+
+  <div class="cake">
+    <img src="nailoong-cake.png" alt="Kue Ultah Nailoong" />
+  </div>
+
+  <div class="message">
+    🩷 Dari Aii buat Nailoong yang gemay: <br />
+    "Semoga makin cute, ceria, dan disayang banyaaak orang yaa~ 🐥🎂💗"
+  </div>
+
+  <script>
+    window.onload = function () {
+      const popup = document.getElementById("popup");
+      popup.style.display = "block";
+      setTimeout(() => {
+        popup.style.display = "none";
+      }, 3500);
+    };
+  </script>
+</body>
+</html>
+all in one file
